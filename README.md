@@ -92,7 +92,7 @@ No backend required
 
 Clone the repo:
 
-git clone https://github.com/YOURUSERNAME/TinyDay.git
+git clone https://github.com/Arbri88/TinyDay.git
 cd TinyDay
 
 
@@ -140,7 +140,7 @@ Done
 
 Your app is live at:
 
-https://yourusername.github.io/TinyDay/
+https://arbri88.github.io/TinyDay/
 
 🤝 Contributing
 
