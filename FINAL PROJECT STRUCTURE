@@ -1,0 +1,59 @@
+TinyDay/
+│
+├── index.html
+├── README.md
+│
+├── css/
+│   ├── styles.css
+│   └── themes.css
+│
+├── js/
+│   ├── state.js
+│   ├── storage.js
+│   ├── utils.js
+│   ├── ui.js
+│   ├── navigation.js
+│
+│   ├── ai.js
+│   ├── sentimentAI.js
+│   ├── emotion.js
+│
+│   ├── dailyQuests.js
+│   ├── assistant.js
+│   ├── uiAssistant.js
+│   ├── notifications.js
+│
+│   ├── mealPlanner.js
+│   ├── recipes.js
+│   ├── budget.js
+│
+│   ├── lifeMap.js
+│   ├── autoRoutine.js
+│   ├── therapist.js
+│
+│   ├── voiceControl.js
+│   ├── voiceMemories.js
+│
+│   ├── analytics.js
+│   ├── weeklyReport.js
+│   ├── emotionTimeline.js
+│
+│   ├── calendar.js
+│   ├── coach.js
+│   ├── habitAI.js
+│   ├── xp.js
+│
+│   ├── cloud.js        (Firebase)
+│   ├── socialFriends.js
+│
+├── assets/
+│   ├── icons/
+│   ├── logo.png
+│   ├── share-bg.png
+│
+├── data/
+│   ├── sampleRecipes.json
+│   └── sampleJournals.json
+│
+└── models/
+    └── distilbert/      (optional local model cache)
