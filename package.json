@@ -2,7 +2,7 @@
   "name": "tinyday",
   "version": "1.0.0",
   "scripts": {
-    "dev": "live-server",
+    "dev": "node scripts/dev-server.js",
     "build": "echo 'No build step needed'"
   }
 }
