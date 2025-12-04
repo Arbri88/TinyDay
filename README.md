@@ -25,4 +25,10 @@ Folders:
 /voice
 
 
-Run locally by opening `index.html` or deploy to GitHub Pages.
+Run locally by opening `index.html` in your browser or start a local server:
+
+```bash
+npm run dev
+```
+
+The dev server runs at `http://localhost:3000` (override with `PORT=xxxx npm run dev`).
