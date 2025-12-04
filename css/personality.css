@@ -1,0 +1,8 @@
+#personalityPanel {
+  padding: 20px;
+}
+
+#personalityPanel .trait {
+  margin-bottom: 4px;
+  opacity: 0.8;
+}

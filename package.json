@@ -1,0 +1,8 @@
+{
+  "name": "tinyday",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "live-server",
+    "build": "echo 'No build step needed'"
+  }
+}

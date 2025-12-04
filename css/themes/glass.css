@@ -1,0 +1,8 @@
+:root {
+  --bg: rgba(255, 255, 255, 0.4);
+  --text: #222;
+  --surface: rgba(255, 255, 255, 0.25);
+  --border: rgba(255, 255, 255, 0.35);
+  --accent: #4fb6e5;
+  backdrop-filter: blur(6px);
+}

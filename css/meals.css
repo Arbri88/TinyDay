@@ -1,0 +1,6 @@
+.meal {
+  padding: 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  margin-bottom: 6px;
+}

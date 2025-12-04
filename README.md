@@ -1,151 +1,23 @@
-📘 TinyDay — Your Personal AI Lifestyle OS
+# TinyDay — Personal AI Wellbeing OS
 
-TinyDay is an offline-first, browser-based personal assistant built with:
+TinyDay is a modular, AI-augmented wellbeing system featuring:
 
-AI habit coaching
+- Habits, journal, meals, sleep, and life-map tracking
+- Voice journaling with transcription-ready storage hooks
+- Social mode feed, reactions, friends, circles, and challenges
+- AI copilot chat with RAG memory and personality engine
+- Themeable, nav-based UI ready for GitHub Pages deployment
 
-Long-term life planning
+## Project layout
 
-CBT therapist mode
+- `/index.html` — entry page rendering all panels and copilot UI
+- `/css` — core styles plus themed palettes (light, dark, pastel, neon, glass)
+- `/components` — UI panels for habits, journal, meals, sleep, life map, social, voice, settings, and copilot
+- `/js` — state management, feature logic, and initializers
+- `/ai` — copilot + personality engines
+- `/social`, `/voice` — feature-specific logic modules
+- `/manifest.json`, `/service-worker.js` — PWA + offline cache scaffolding
 
-Voice memories
+## Running
 
-Automatic meal planning & budgeting
-
-Daily quests
-
-Emotion analytics & timeline graphs
-
-Full gamification (XP + levels)
-
-Cloud sync (optional)
-
-Everything runs locally with optional Firebase sync.
-Designed for lightweight, fast, private use.
-
-🚀 Features
-🌟 AI Systems
-
-TinyAI Assistant
-
-Life Map Generator (long-term vision planning)
-
-CBT Therapist Mode
-
-Sentiment analysis (transformer-based)
-
-Emotion timeline graph
-
-Auto habit suggestions
-
-Meal planning AI
-
-Personalized daily quests
-
-AI Routine Builder
-
-🧠 Cognitive Features
-
-Emotion recognition from journals
-
-Stress event detection
-
-Circadian-aware suggestions
-
-Sleep tracking & insights
-
-🎙 Voice Features
-
-“Hey TinyDay” voice assistant
-
-Voice Memories (audio → transcript → emotion)
-
-🎮 Gamification
-
-XP system
-
-Level progression
-
-Rewards
-
-Shareable social cards
-
-🔧 Technical Highlights
-
-100% client-side
-
-Modular ES6 architecture
-
-LocalStorage persistence
-
-Optional Firebase Cloud sync
-
-Offline-friendly
-
-No backend required
-
-📁 Folder Structure
-
-(Shows entire file tree as structured above)
-
-🔧 Installation
-
-Clone the repo:
-
-git clone https://github.com/Arbri88/TinyDay.git
-cd TinyDay
-
-
-Open locally:
-
-open index.html
-
-
-Or run with a simple local dev server:
-
-npx serve
-
-🔥 Optional Setup — Firebase Sync
-
-Fill in js/cloud.js:
-
-export const firebaseConfig = {
-  apiKey: "...",
-  authDomain: "...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "..."
-};
-
-🧠 AI Models
-
-TinyDay uses the lightweight browser transformer:
-
-@xenova/transformers
-Model: distilbert-base-uncased-finetuned-sst-2
-
-
-Runs entirely client-side.
-
-🌍 Deploy to GitHub Pages
-
-Push repo to GitHub
-
-Go to Settings → Pages
-
-Select branch: main → /root
-
-Done
-
-Your app is live at:
-
-https://arbri88.github.io/TinyDay/
-
-🤝 Contributing
-
-Pull requests welcome.
-
-📄 License
-
-MIT License.
+Open `index.html` locally (or serve with any static server). Update settings in the UI for your AI API key or proxy, and switch themes in Settings. Deploy to GitHub Pages using the included `README_DEPLOY.md` guidance.

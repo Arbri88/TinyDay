@@ -1,0 +1,6 @@
+#sleepList div {
+  background: var(--surface);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
