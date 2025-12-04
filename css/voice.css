@@ -1,0 +1,14 @@
+#voiceDashboard .voice-entry {
+  background: var(--surface);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#voiceOutput {
+  white-space: pre-wrap;
+  padding: 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  margin-top: 10px;
+}

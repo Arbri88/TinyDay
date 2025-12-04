@@ -1,0 +1,17 @@
+.journal-entry {
+  padding: 12px;
+  background: var(--surface);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.journal-entry .d {
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.journal-entry .g,
+.journal-entry .b,
+.journal-entry .c {
+  margin-bottom: 4px;
+}

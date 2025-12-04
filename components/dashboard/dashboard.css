@@ -1,0 +1,6 @@
+.dash-item {
+  padding: 8px;
+  background: var(--surface);
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
