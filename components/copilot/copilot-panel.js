@@ -1,31 +1,39 @@
 import { Copilot } from "../../ai/copilot/copilot-core.js";
 
-export const setupCopilotUI = () => {
-  const open = document.querySelector("#openCopilot");
-  const panel = document.querySelector("#copilotPanel");
-  const input = document.querySelector("#copilotInput");
-  const msgs = document.querySelector("#copilotMessages");
+function addMessage(container, role, text) {
+  const div = document.createElement("div");
+  div.className = `copilot-${role}`;
+  div.textContent = text;
+  container.appendChild(div);
+}
 
-  if (!open || !panel || !input || !msgs) return;
+export function setupCopilotUI() {
+  const openBtn = document.getElementById("openCopilot");
+  const panel = document.getElementById("copilotPanel");
+  const messages = document.getElementById("copilotMessages");
+  const input = document.getElementById("copilotInput");
 
-  open.onclick = () => panel.classList.toggle("open");
+  if (!openBtn || !panel || !messages || !input) return;
 
-  input.addEventListener("keydown", async (e) => {
-    if (e.key === "Enter" && input.value.trim()) {
-      const userText = input.value.trim();
+  panel.style.display = "none";
 
-      msgs.innerHTML += `
-        <div class="msg user"><div class="bubble">${userText}</div></div>
-      `;
-      input.value = "";
+  openBtn.onclick = () => {
+    panel.style.display = panel.style.display === "none" ? "block" : "none";
+    if (panel.style.display === "block") input.focus();
+  };
 
-      const reply = await Copilot.ask(userText);
+  async function sendPrompt() {
+    const prompt = input.value.trim();
+    if (!prompt) return;
+    addMessage(messages, "user", prompt);
+    input.value = "";
+    const reply = await Copilot.ask(prompt);
+    addMessage(messages, "assistant", reply || "No response.");
+  }
 
-      msgs.innerHTML += `
-        <div class="msg bot"><div class="bubble">${reply}</div></div>
-      `;
-
-      msgs.scrollTop = msgs.scrollHeight;
+  input.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      sendPrompt();
     }
   });
-};
+}
